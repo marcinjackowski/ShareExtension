@@ -12,7 +12,34 @@
 		D66315CC1F42FF1600EB0A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66315CA1F42FF1600EB0A30 /* Main.storyboard */; };
 		D66315CE1F42FF1600EB0A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66315CD1F42FF1600EB0A30 /* Assets.xcassets */; };
 		D66315D11F42FF1600EB0A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66315CF1F42FF1600EB0A30 /* LaunchScreen.storyboard */; };
+		D66315DF1F43006100EB0A30 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66315DE1F43006100EB0A30 /* ShareViewController.swift */; };
+		D66315E21F43006100EB0A30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66315E01F43006100EB0A30 /* MainInterface.storyboard */; };
+		D66315E61F43006100EB0A30 /* Photos.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D66315DC1F43006100EB0A30 /* Photos.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D66315E41F43006100EB0A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66315BB1F42FF1600EB0A30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66315DB1F43006100EB0A30;
+			remoteInfo = Photos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D66315EA1F43006100EB0A30 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D66315E61F43006100EB0A30 /* Photos.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D66315C31F42FF1600EB0A30 /* ShareExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,23 @@
 		D66315CD1F42FF1600EB0A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66315D01F42FF1600EB0A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D66315D21F42FF1600EB0A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66315DC1F43006100EB0A30 /* Photos.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Photos.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66315DE1F43006100EB0A30 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		D66315E11F43006100EB0A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D66315E31F43006100EB0A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66315EB1F43019D00EB0A30 /* Photos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Photos.entitlements; sourceTree = "<group>"; };
+		D66315EC1F43047E00EB0A30 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D66315C01F42FF1600EB0A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66315D91F43006100EB0A30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D66315C51F42FF1600EB0A30 /* ShareExtension */,
+				D66315DD1F43006100EB0A30 /* Photos */,
 				D66315C41F42FF1600EB0A30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D66315C31F42FF1600EB0A30 /* ShareExtension.app */,
+				D66315DC1F43006100EB0A30 /* Photos.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +96,7 @@
 		D66315C51F42FF1600EB0A30 /* ShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				D66315EC1F43047E00EB0A30 /* ShareExtension.entitlements */,
 				D66315C61F42FF1600EB0A30 /* AppDelegate.swift */,
 				D66315C81F42FF1600EB0A30 /* ViewController.swift */,
 				D66315CA1F42FF1600EB0A30 /* Main.storyboard */,
@@ -62,6 +105,17 @@
 				D66315D21F42FF1600EB0A30 /* Info.plist */,
 			);
 			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		D66315DD1F43006100EB0A30 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				D66315EB1F43019D00EB0A30 /* Photos.entitlements */,
+				D66315DE1F43006100EB0A30 /* ShareViewController.swift */,
+				D66315E01F43006100EB0A30 /* MainInterface.storyboard */,
+				D66315E31F43006100EB0A30 /* Info.plist */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +128,34 @@
 				D66315BF1F42FF1600EB0A30 /* Sources */,
 				D66315C01F42FF1600EB0A30 /* Frameworks */,
 				D66315C11F42FF1600EB0A30 /* Resources */,
+				D66315EA1F43006100EB0A30 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D66315E51F43006100EB0A30 /* PBXTargetDependency */,
 			);
 			name = ShareExtension;
 			productName = ShareExtension;
 			productReference = D66315C31F42FF1600EB0A30 /* ShareExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D66315DB1F43006100EB0A30 /* Photos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66315E71F43006100EB0A30 /* Build configuration list for PBXNativeTarget "Photos" */;
+			buildPhases = (
+				D66315D81F43006100EB0A30 /* Sources */,
+				D66315D91F43006100EB0A30 /* Frameworks */,
+				D66315DA1F43006100EB0A30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Photos;
+			productName = Photos;
+			productReference = D66315DC1F43006100EB0A30 /* Photos.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,7 +169,23 @@
 				TargetAttributes = {
 					D66315C21F42FF1600EB0A30 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 27FAFL2WP5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D66315DB1F43006100EB0A30 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 27FAFL2WP5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				D66315C21F42FF1600EB0A30 /* ShareExtension */,
+				D66315DB1F43006100EB0A30 /* Photos */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +219,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D66315DA1F43006100EB0A30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66315E21F43006100EB0A30 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +239,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D66315D81F43006100EB0A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66315DF1F43006100EB0A30 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D66315E51F43006100EB0A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66315DB1F43006100EB0A30 /* Photos */;
+			targetProxy = D66315E41F43006100EB0A30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D66315CA1F42FF1600EB0A30 /* Main.storyboard */ = {
@@ -158,6 +272,14 @@
 				D66315D01F42FF1600EB0A30 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D66315E01F43006100EB0A30 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D66315E11F43006100EB0A30 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,7 +383,10 @@
 		D66315D61F42FF1700EB0A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				DEVELOPMENT_TEAM = 27FAFL2WP5;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.marcinjackowski.ShareExtension;
@@ -273,11 +398,42 @@
 		D66315D71F42FF1700EB0A30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				DEVELOPMENT_TEAM = 27FAFL2WP5;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.marcinjackowski.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D66315E81F43006100EB0A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Photos/Photos.entitlements;
+				DEVELOPMENT_TEAM = 27FAFL2WP5;
+				INFOPLIST_FILE = Photos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.marcinjackowski.ShareExtension.Photos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D66315E91F43006100EB0A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Photos/Photos.entitlements;
+				DEVELOPMENT_TEAM = 27FAFL2WP5;
+				INFOPLIST_FILE = Photos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.marcinjackowski.ShareExtension.Photos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +455,15 @@
 			buildConfigurations = (
 				D66315D61F42FF1700EB0A30 /* Debug */,
 				D66315D71F42FF1700EB0A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66315E71F43006100EB0A30 /* Build configuration list for PBXNativeTarget "Photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66315E81F43006100EB0A30 /* Debug */,
+				D66315E91F43006100EB0A30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
