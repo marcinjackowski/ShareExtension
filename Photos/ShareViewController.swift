@@ -10,7 +10,7 @@ import UIKit
 import Social
 import MobileCoreServices
 
-class ShareViewController: UIViewController {
+final class ShareViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -40,7 +40,6 @@ class ShareViewController: UIViewController {
                 attachment.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil) { data, error in
                     guard let url = data as? URL else { return self.endShareFlow() }
                     photoUrls.append(url)
-                    
                     // 5
                     if index == attachmentsCount - 1 {
                         let photosData = photoUrls.flatMap { try? Data(contentsOf: $0) }
@@ -65,10 +64,8 @@ class ShareViewController: UIViewController {
         while let tempResponder = responder, !tempResponder.responds(to: selector)  {
             responder = tempResponder.next
         }
-        
         // 4
         _ = responder?.performSelector(inBackground: selector!, with: url)
-        
         // 5
         endShareFlow()
     }
